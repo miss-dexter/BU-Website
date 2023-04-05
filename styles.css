@@ -1,20 +1,20 @@
 /*Global CSS*/
-*{
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .row::after {
-  content:"";
-  clear:both;
-  display:table;
-  margin: 0;
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0;
 }
 
 [class*="col-"] {
-float:left;
-padding: 16px;
-    
+    float: left;
+    padding: 16px;
+
 }
 
 [class*="container"] {
@@ -22,29 +22,29 @@ padding: 16px;
 }
 
 
-body{
-max-width: 100%;
-margin: 0 auto;
-font-family: 'Poppins', sans-serif;
-    
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-h1{
+h1 {
     font-size: 48px;
     margin: 0px;
 }
 
-h2{
+h2 {
     font-size: 32px;
     margin: 0px;
 }
 
-h3{
+h3 {
     font-size: 24px;
     margin: 0px;
 }
 
-p{
+p {
     font-size: 16px;
     line-height: 28px;
     margin: 0px;
@@ -56,12 +56,12 @@ p{
 /*Header CSS*/
 
 
-a img{
+a img {
     width: 75px;
     height: 59px;
 }
 
-nav{
+nav {
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -69,19 +69,19 @@ nav{
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     margin-right: 40px;
 
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     font-size: 16px;
     text-decoration: none;
 }
 
-button{
+button {
     padding: 16px 18px;
     background-color: white;
     border-radius: 16px;
@@ -93,12 +93,12 @@ button{
 }
 
 
-button:hover{
+button:hover {
     border-radius: 16px;
     background-color: #BC3BF9;
     margin: 0px;
     color: white;
-   
+
 }
 
 
@@ -106,34 +106,34 @@ button:hover{
 
 /*Banner CSS*/
 
-.hero-banner{
+.hero-banner {
     height: 664px;
     background: linear-gradient(90.87deg, #FFD1D1 0.35%, #FBFFDE 19.45%, #D7FDDF 43.32%, #E0FFFD 63.12%, #D0D0FE 80.39%, #F9DEFF 97.85%);
 }
 
-.h1-regular{
+.h1-regular {
     font-weight: 400;
     line-height: 64px;
     padding-bottom: 24px;
 }
 
-.banner-content{
+.banner-content {
     position: relative;
     padding-top: 164px;
     padding-left: 40px;
 }
 
-.buttons{
+.buttons {
     padding: 24px 0px !important;
 }
 
-.buttons img{
+.buttons img {
     width: 156px;
     height: 51px;
     display: inline-block;
 }
 
-#stores{
+#stores {
     margin-right: 8px;
 }
 
@@ -148,7 +148,7 @@ button:hover{
 
 /*Stats CSS*/
 
-.stats{
+.stats {
     height: 278px;
     background-color: #F9F9F9;
     display: flex;
@@ -156,48 +156,119 @@ button:hover{
     align-items: center;
 }
 
-.stat-value{
+.stat-value {
     color: #BC3BF9;
     font-weight: bolder;
     margin: 0px;
     padding: 0px;
 }
 
+/**
+ * Quick and easy CSS3 rolling-number/slot machine?
+ */
 
 
+ .statdiv{
+    display: inline-block;
+ }
 
-/*About Us CSS*/
+ .test{
+    display: inline;
+    color: #BC3BF9;
+    font-weight: bolder;
+    font-size: 4rem; 
+ }
 
-.about-us{
-    padding: 100px 72px;
-    display: flex;
-    align-items: center;
+#counter {
+    height: 1em;
+    overflow: hidden;
+    color: #BC3BF9;
+    font-weight: bolder;
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
-.about-content{
-    padding-bottom: 24px;
+.digits {
+    color: #BC3BF9;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    list-style-type: none;
+    font-size: 1em;
+    line-height: 1em;
+    font-size: 4rem;
 }
 
-.learn-more{
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+
+.digits-first {
+    margin-top: 0em;
+}
+
+.digits {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.anim2 {
+    animation-name: anim2;
+}
+
+/* Animations */
+@keyframes anim2 {
+    100% {
+        margin-top: -2em;
+    }
+}
+
+.anim9 {
+    animation-name: anim9;
+}
+
+/* Animations */
+@keyframes anim9 {
+    100% {
+        margin-top: -9em;
+    }
 }
 
 
+.anim8 {
+    animation-name: anim8;
+}
+
+/* Animations */
+@keyframes anim8 {
+    100% {
+        margin-top: -8em;
+    }
+}
+
+
+.anim5 {
+    animation-name: anim5;
+}
+
+/* Animations */
+@keyframes anim5 {
+    100% {
+        margin-top: -5em;
+    }
+}
 
 
 
 /*Our Services CSS*/
 
-.our-services{
+.our-services {
     background-color: #f1f1f1;
     padding: 100px 100px;
     text-align: center;
 }
 
-.service-image{
+.service-image {
     padding-bottom: 40px;
 }
 
@@ -207,35 +278,35 @@ button:hover{
 /*Download App CSS*/
 
 .image-with-text {
-  position: relative;
+    position: relative;
 }
 
 .image-with-text img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .image-with-text .text-overlay {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
     color: white;
 }
 
 .image-with-text .text-overlay h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
-.image-with-text .text-overlay .download-btns{
+.image-with-text .text-overlay .download-btns {
     padding-top: 24px;
 }
 
-.image-with-text .text-overlay .download-btn{
-    width:160px;
+.image-with-text .text-overlay .download-btn {
+    width: 160px;
     height: 50px;
     display: inline;
     margin-right: 16px;
@@ -247,7 +318,7 @@ button:hover{
 
 /*Footer CSS*/
 
-footer{
+footer {
     background-color: #000;
     color: white;
     height: 240px;
@@ -257,13 +328,13 @@ footer{
 
 }
 
-.footer-nav{
+.footer-nav {
     display: block;
 
 }
 
 
-.social-icons img{
+.social-icons img {
     width: 32px;
     height: 32px;
     display: inline;
@@ -277,30 +348,65 @@ footer{
 /*Mediaquery for responsiveness*/
 
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 
 
 @media only screen and (max-width:600px) {
 
-*{
-    text-align: center;
-}  
+    * {
+        text-align: center;
+    }
 
-  [class*="col-"] {
-    width:100%;
-    align-content: center;
-    justify-content: center;
-  }
+    [class*="col-"] {
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
 }
