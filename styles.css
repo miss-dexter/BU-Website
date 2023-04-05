@@ -1,0 +1,306 @@
+/*Global CSS*/
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+  margin: 0;
+}
+
+[class*="col-"] {
+float:left;
+padding: 16px;
+    
+}
+
+[class*="container"] {
+    padding-bottom: 120px;
+}
+
+
+body{
+max-width: 100%;
+margin: 0 auto;
+font-family: 'Poppins', sans-serif;
+    
+}
+
+h1{
+    font-size: 48px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 32px;
+    margin: 0px;
+}
+
+h3{
+    font-size: 24px;
+    margin: 0px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+
+
+
+/*Header CSS*/
+
+
+a img{
+    width: 75px;
+    height: 59px;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 40px;
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button{
+    padding: 16px 18px;
+    background-color: white;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border: 1px transparent;
+}
+
+
+button:hover{
+    border-radius: 16px;
+    background-color: #BC3BF9;
+    margin: 0px;
+    color: white;
+   
+}
+
+
+
+
+/*Banner CSS*/
+
+.hero-banner{
+    height: 664px;
+    background: linear-gradient(90.87deg, #FFD1D1 0.35%, #FBFFDE 19.45%, #D7FDDF 43.32%, #E0FFFD 63.12%, #D0D0FE 80.39%, #F9DEFF 97.85%);
+}
+
+.h1-regular{
+    font-weight: 400;
+    line-height: 64px;
+    padding-bottom: 24px;
+}
+
+.banner-content{
+    position: relative;
+    padding-top: 164px;
+    padding-left: 40px;
+}
+
+.buttons{
+    padding: 24px 0px !important;
+}
+
+.buttons img{
+    width: 156px;
+    height: 51px;
+    display: inline-block;
+}
+
+#stores{
+    margin-right: 8px;
+}
+
+
+.iphone {
+    position: relative;
+    padding-top: 64px;
+}
+
+
+
+
+/*Stats CSS*/
+
+.stats{
+    height: 278px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stat-value{
+    color: #BC3BF9;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/*About Us CSS*/
+
+.about-us{
+    padding: 100px 72px;
+    display: flex;
+    align-items: center;
+}
+
+.about-content{
+    padding-bottom: 24px;
+}
+
+.learn-more{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+/*Our Services CSS*/
+
+.our-services{
+    background-color: #f1f1f1;
+    padding: 100px 100px;
+    text-align: center;
+}
+
+.service-image{
+    padding-bottom: 40px;
+}
+
+
+
+
+/*Download App CSS*/
+
+.image-with-text {
+  position: relative;
+}
+
+.image-with-text img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-with-text .text-overlay {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+    color: white;
+}
+
+.image-with-text .text-overlay h2 {
+  margin-top: 0;
+}
+
+.image-with-text .text-overlay .download-btns{
+    padding-top: 24px;
+}
+
+.image-with-text .text-overlay .download-btn{
+    width:160px;
+    height: 50px;
+    display: inline;
+    margin-right: 16px;
+}
+
+
+
+
+
+/*Footer CSS*/
+
+footer{
+    background-color: #000;
+    color: white;
+    height: 240px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.footer-nav{
+    display: block;
+
+}
+
+
+.social-icons img{
+    width: 32px;
+    height: 32px;
+    display: inline;
+    margin-right: 16px;
+    align-self: flex-end;
+}
+
+
+
+
+/*Mediaquery for responsiveness*/
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media only screen and (max-width:600px) {
+
+*{
+    text-align: center;
+}  
+
+  [class*="col-"] {
+    width:100%;
+    align-content: center;
+    justify-content: center;
+  }
+}

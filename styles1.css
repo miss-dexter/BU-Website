@@ -1,0 +1,268 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+  margin: 0;
+}
+
+[class*="col-"] {
+float:left;
+padding: 16px;
+    
+}
+
+[class*="container"] {
+    padding-bottom: 120px;
+}
+
+
+body{
+max-width: 100%;
+margin: 0 auto;
+font-family: 'Poppins', sans-serif;
+    
+}
+
+h1{
+    font-size: 48px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 48px;
+    margin: 0px;
+}
+
+h3{
+    font-size: 24px;
+    margin: 0px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+
+/*Header CSS*/
+
+
+a img{
+    width: 75px;
+    height: 59px;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 40px;
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button{
+    padding: 16px 18px;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+button:hover{
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+
+
+/*Banner CSS*/
+
+.hero-banner{
+    height: 664px;
+    background: linear-gradient(90.87deg, #FFD1D1 0.35%, #FBFFDE 19.45%, #D7FDDF 43.32%, #E0FFFD 63.12%, #D0D0FE 80.39%, #F9DEFF 97.85%);
+}
+
+.h1-regular{
+    font-weight: 400;
+    line-height: 64px;
+    padding-bottom: 24px;
+}
+.abt-ctnt{
+    position: relative;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+
+}
+.banner-content{
+    position: relative;
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+}
+.banner-content img {
+    width: 404px;
+    height: 515px;
+    position: relative;
+   
+}
+.buttons{
+    padding: 24px 0px !important;
+}
+
+.buttons img{
+    width: 130px;
+    height: 41px;
+    display: inline-block;
+}
+
+#store{
+    margin-right: 8px;
+}
+
+/* about us mission and vision section */
+.m-v-sections { 
+    display: flex;
+    position: relative;
+    padding-right:20px;
+    padding-top: 30px;
+    margin: 10% 0;
+}
+.m-v-sect {
+    display: flex;
+    padding-left: 100px;
+
+}
+.mission {
+    position: relative;
+    top:50%;
+    right:50%;
+}
+.mission-vision-image {
+    padding-right: 100px;
+}
+/* Contactus Page */
+.side-side{ 
+    background: linear-gradient(90.87deg, #FFD1D1 0.35%, #FBFFDE 19.45%, #D7FDDF 43.32%, #E0FFFD 63.12%, #D0D0FE 80.39%, #F9DEFF 97.85%);
+    display: flex;
+    position: relative;
+    padding-right:20px;
+}
+/* Form css */
+.form-content { 
+    width: 462.79px;
+    height: 565px;
+    background-color: #FFFFFF;
+    border-radius:16px;
+    margin: 20px;
+}
+
+.form-content label {
+    color:#3d4243;
+    padding: 10px 0px;
+    margin: 15px 20px;
+}
+.form-content input[type=text],input[type=email] {
+    width: 398px;
+    padding: 10px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 49px;
+  }
+  
+
+.form-content button {
+    width: 399px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-content button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  .contact-us{
+    position: relative;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  .contact-us-sub h3 li {
+    list-style-type: none;
+  }
+  .contact-us-sub h3{
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+/*Stats CSS*/
+
+.stats{
+    height: 150px;
+    background-color: #F9F9F9;
+}
+
+.stat-value{
+    color: #BC3BF9;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media only screen and (max-width:600px) {
+
+*{
+    text-align: center;
+}  
+
+  [class*="col-"] {
+    width:100%;
+    align-content: center;
+    justify-content: center;
+  }
+}
