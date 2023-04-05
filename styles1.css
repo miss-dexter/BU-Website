@@ -169,47 +169,77 @@ button:hover{
     display: flex;
     position: relative;
     padding-right:20px;
+    z-index: 99;
 }
 /* Form css */
+
+
 .form-content { 
-    width: 462.79px;
-    height: 565px;
+    z-index: 9999;
+    width: 30rem;
+    height: 27rem;
     background-color: #FFFFFF;
     border-radius:16px;
-    margin: 20px;
+    margin: 30px;
 }
 
 .form-content label {
     color:#3d4243;
     padding: 10px 0px;
     margin: 15px 20px;
+    
 }
 .form-content input[type=text],input[type=email] {
-    width: 398px;
-    padding: 10px 20px;
-    margin: 8px 20px;
-    display: inline-block;
+    border-radius: 8px;
+    margin: 24xp;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 92%;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 49px;
   }
-  
+ 
+
+  .form-content textarea {
+    border-radius: 8px;
+    padding: 8px;
+    margin: 10px 20px;
+    width: 92%;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 100px;
+  }
+
+#fname{
+    margin-top: 25px;
+}
+
+#form{
+    margin:auto;
+    margin-right: 0px;
+}
+#contact-us-container{
+    margin: auto;
+    margin-left: 0px;
+    /* width: 50%; */
+}
 
 .form-content button {
     width: 399px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 14px 20px;
-    margin: 8px 20px;
     border: 1px solid #000000;
     border-radius: 8px;
     cursor: pointer;
+    width: 25%;
+    margin-left: 11rem;
   }
   
   .form-content button:hover {
     background-color: #000000;
     color: #FFFFFF;
+    width: 25%;
+    border-radius: 8px;
+    margin-left: 11rem;
   }
   .contact-us{
     position: relative;
@@ -222,6 +252,13 @@ button:hover{
   .contact-us-sub h3{
     font-size: 18px;
     font-weight: 400;
+  }
+  .contact-us-sub {
+    padding: 10px 20px;
+  }
+  .contact-sub {
+    padding: 10px 20px;
+
   }
 
 /*Stats CSS*/

@@ -1,105 +1,122 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Be You: Contact Us</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles1.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <header>
-            
-            <nav>
+
+<head>
+    <title>Be You: Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
             <ul>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
                 <button>Download Now</button>
             </ul>
-            </nav>
+        </nav>
 
-        </header>
-        <!-- ADDING SPACE FOR MARGIN REFERENCE -->
-        
-        
-        
-        
-        <!-- CONTACT US SECTION -->
-        <main>
-            <section class="side-side col-12">
-                <form class="form-content" action="#" method="post">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname" value="John">
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname" value="Doe">
-                    <label for="yemail">Your Email:</label>
-                    <input type="email" id="yemail" name="yemail" value="xyz@gmail.com">
-                    <label for="yphone">Your Phone:</label>
-                    <input type="text" id="yphone" name="yphone" value="123-456-7890">
-                    <label for="yquery">Your Query:</label>
-                    <input type="text" id="yquery" name="yquery" value="Type Your Message Here">
+    </header>
+    <!-- ADDING SPACE FOR MARGIN REFERENCE -->
+
+
+
+
+    <!-- CONTACT US SECTION -->
+    <main>
+        <section class="side-side col-12">
+
+            <div id="form">
+                <form class="form-content" method="get">
+                    <input type="text" id="fname" name="lname" placeholder="First name">
+                    <input type="text" id="lname" name="lname" placeholder="Last name">
+                    <input type="email" id="yemail" name="yemail" placeholder="Email">
+                    <input type="text" id="yphone" name="yphone" placeholder="Phone">
+                    <textarea type="textarea" id="yquery" name="yquery"
+                        placeholder="Please type your message here..."></textarea>
                     <button type="submit">Submit</button>
                 </form>
-            
-                    <!-- ADDING SPACE FOR MARGIN REFERENCE -->
-                <section class="contact-us col-6">
+            </div>
+
+            <!-- ADDING SPACE FOR MARGIN REFERENCE -->
+            <div id="contact-us-container">
+                <section class="contact-us">
                     <section class="contact-sub">
                         <p>contact us</p>
                         <h1>Get in touch today</h1>
-                        <p>Please do not hesitate to contact us. 
-                        We will respond within 24 hours. Thank you! :)</p>
-                    </section>    
-                    <section class="contact-us-sub col-5">
-                        <img src="images/Email.png" id="email-icon" alt="Email Icon">
-                        <h3><li><a href="mail to:support@beyou.com">support@beyou.com</a></h3>
-                        <img src="images/Phone.png" id="phone-icon" alt="Phone Icon">    
-                        <h3>+1(123)456-789</h3>
-                        <img src="images/location.png" id="location-icon" alt="Location Icon">       
-                        <h3>794 Mcallister St Ontario, 94102</h3>  
+                        <p>Please do not hesitate to contact us.
+                            We will respond within 24 hours. Thank you! :)</p>
+                    </section>
+                    <section class="contact-us-sub">
+                        <div style="display: flex; margin:8px">
+                            <img style="height: 25px" src="images/Email.png" id="email-icon" alt="Email Icon">
+                            <h3 style="margin-left: 12px">
+                                <li><a href="mail to:support@beyou.com">support@beyou.com</a>
+                            </h3>
+                        </div>
+                        <div style="display: flex; margin:8px; margin-top:16px">
+                            <img style="height: 25px" src="images/Phone.png" id="phone-icon" alt="Phone Icon">
+                            <h3 style="margin-left: 12px">+1(123)456-789</h3>
+                        </div>
+                        <div style="display: flex; margin:8px">
+                            <img style="height: 30px" src="images/location.png" id="location-icon" alt="Location Icon">
+                            <h3 style="margin-left: 12px; margin-top:8px">794 Mcallister St Ontario, 94102</h3>
+                        </div>
                     </section>
                 </section>
-            </section>                 
-             <!-- DOWNLOAD APP SECTION -->
-            
+            </div>
+        </section>
+        <!-- DOWNLOAD APP SECTION -->
+
         <section class="image-with-text">
             <img src="images/download-image.png" alt="Image">
             <section class="text-overlay">
-            <h2>Join BU and Start your journey today!</h2>
-                
-            <section class="download-btns">
-            <a href="https://www.apple.com/ca/app-store/" target="_blank"><img class="download-btn" src="images/App%20Store.png"></a>
-            <a href="https://play.google.com/store/apps" target="_blank"><img class="download-btn" src="images/Playstore.png"></a>
+                <h2>Join BU and Start your journey today!</h2>
+
+                <section class="download-btns">
+                    <a href="https://www.apple.com/ca/app-store/" target="_blank"><img class="download-btn"
+                            src="images/App%20Store.png"></a>
+                    <a href="https://play.google.com/store/apps" target="_blank"><img class="download-btn"
+                            src="images/Playstore.png"></a>
+                </section>
+
             </section>
-                
-            </section>
 
-        </section>    
-        
+        </section>
 
-        </main>
 
-        
-        <!-- FOOTER SECTION -->       
-        <footer class="col-12">           
-            <section class="col-8">
-            <h2 class="col-3">Be.You</h2>               
+    </main>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="col-12">
+        <section class="col-8">
+            <h2 class="col-3">Be.You</h2>
             <nav class="footer-nav col-6">
                 <ul id="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact-us.html"++>Contact Us</a></li>
+                    <li><a href="contact-us.html" ++>Contact Us</a></li>
                 </ul>
             </nav>
-            </section>         
-            <section class="social-links">
+        </section>
+        <section class="social-links">
             <h4>Follow Us on</h4>
-                <section class="social-icons">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook logo"></a>
-                    <a href="https://instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram logo"></a>
-                    <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin logo"></a>
-                </section>       
+            <section class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook logo"></a>
+                <a href="https://instagram.com/" target="_blank"><img src="images/instagram.svg"
+                        alt="instagram logo"></a>
+                <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin logo"></a>
             </section>
-        </footer>
-    </body>
+        </section>
+    </footer>
+</body>
+
 </html>
