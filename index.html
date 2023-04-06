@@ -9,6 +9,67 @@
 
     <script src="https://kit.fontawesome.com/48923b69b0.js" crossorigin="anonymous">
     </script>
+
+    <style>
+
+        .slider-wrapper {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .slides-container {
+        height: calc(100vh - 2rem);
+        width: 100%;
+        display: flex;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        .slide-arrow {
+        position: absolute;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 4rem;
+        background-color: white;
+        border: none;
+        width: 2rem;
+        font-size: 3rem;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 100ms;
+        }
+
+        /* .slide-arrow:hover,
+        .slide-arrow:focus {
+        opacity: 1;
+        } */
+
+        #slide-arrow-prev {
+        left: 0;
+        padding-left: 0.25rem;
+        border-radius: 0 2rem 2rem 0;
+        }
+
+        #slide-arrow-next {
+        right: 0;
+        padding-left: 0.75rem;
+        border-radius: 2rem 0 0 2rem;
+        }
+
+        .slide {
+        width: 100%;
+        height: 100%;
+        flex: 1 0 100%;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -20,7 +81,7 @@
             <ul>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
-                <button>Download Now</button>
+                <button class="btn-download">Download Now</button>
             </ul>
         </nav>
 
@@ -179,15 +240,19 @@
 
         <!-- OUR SERVICES SECTION -->
 
-        <section class="our-services col-12">
-
-            <section id="services-info">
-                <h2> Our services</h2>
-
+        <section class="slider-wrapper our-services col-12">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <ul class="slides-container" id="slides-container">
+              <li class="slide">
                 <article class="service-1">
 
                     <img class="service-image col-12" src="images/counselling-service.png" alt="Counselling Services">
-
+    
                     <section>
                         <h2 class="service-content">Counselling services</h2>
                         <p>One of the key features of BU is its counselling feature, which provides a safe and
@@ -202,11 +267,49 @@
                             mood, access resources and self-help tips to manage their mental health.</p>
                     </section>
                 </article>
+              </li>
+              <li class="slide">
+                <article class="service-1">
 
-            </section>
+                    <img class="service-image col-12" src="images/counselling-service.png" alt="Counselling Services">
+    
+                    <section>
+                        <h2 class="service-content">Counselling services</h2>
+                        <p>One of the key features of BU is its counselling feature, which provides a safe and
+                            confidential space for individuals who identify as LGBTQ+ to connect with professional
+                            counsellors. The counselling feature offers personalized support and guidance for a range of
+                            mental health concerns, including anxiety, depression, relationship issues, and more.
+                            Through the app, users can schedule appointments with licensed therapists and connect with
+                            them via live consultation or chat. The counselling sessions are tailored to meet the unique
+                            needs of each individual, taking into consideration their sexual orientation and gender
+                            identity. BU's counselling feature is also equipped with tools to help users track their
+                            progress and set goals to achieve positive mental health outcomes. Users can track their
+                            mood, access resources and self-help tips to manage their mental health.</p>
+                    </section>
+                </article>
+              </li>
+              <li class="slide">
+                <article class="service-1">
 
-        </section>
-
+                    <img class="service-image col-12" src="images/counselling-service.png" alt="Counselling Services">
+    
+                    <section>
+                        <h2 class="service-content">Counselling services</h2>
+                        <p>One of the key features of BU is its counselling feature, which provides a safe and
+                            confidential space for individuals who identify as LGBTQ+ to connect with professional
+                            counsellors. The counselling feature offers personalized support and guidance for a range of
+                            mental health concerns, including anxiety, depression, relationship issues, and more.
+                            Through the app, users can schedule appointments with licensed therapists and connect with
+                            them via live consultation or chat. The counselling sessions are tailored to meet the unique
+                            needs of each individual, taking into consideration their sexual orientation and gender
+                            identity. BU's counselling feature is also equipped with tools to help users track their
+                            progress and set goals to achieve positive mental health outcomes. Users can track their
+                            mood, access resources and self-help tips to manage their mental health.</p>
+                    </section>
+                </article>
+              </li>
+            </ul>
+          </section>
 
 
         <!-- DOWNLOAD APP SECTION -->
@@ -259,6 +362,24 @@
 
         </section>
     </footer>
+
+    <script>
+        const slidesContainer = document.getElementById("slides-container");
+        const slide = document.querySelector(".slide");
+        const prevButton = document.getElementById("slide-arrow-prev");
+        const nextButton = document.getElementById("slide-arrow-next");
+
+        nextButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+        });
+
+        prevButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft -= slideWidth;
+        });
+
+    </script>
 
 </body>
 

@@ -93,7 +93,7 @@ button {
 }
 
 
-button:hover {
+.btn-download:hover {
     border-radius: 16px;
     background-color: #BC3BF9;
     margin: 0px;
