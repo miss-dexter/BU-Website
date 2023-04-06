@@ -34,10 +34,10 @@
 
             <div id="form">
                 <form class="form-content" onsubmit="contactsubmit(event);">
-                    <input type="text" id="fname" name="lname" placeholder="First name">
-                    <input type="text" id="lname" name="lname" placeholder="Last name">
-                    <input type="email" id="yemail" name="yemail" placeholder="Email">
-                    <input type="text" id="yphone" name="yphone" placeholder="Phone">
+                    <input type="text" id="fname" name="lname" placeholder="First name" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last name" required>
+                    <input type="email" id="yemail" name="yemail" placeholder="Email" required>
+                    <input type="text" id="yphone" name="yphone" placeholder="Phone" required>
                     <textarea type="textarea" id="yquery" name="yquery"
                         placeholder="Please type your message here..."></textarea>
                     <button type="submit">Submit</button>
@@ -126,6 +126,12 @@
         function contactsubmit(e)
         {
             e.preventDefault();
+
+            let firstname = document.getElementById('fname').value;
+            let email = document.getElementById('yemail').value;
+            let phone = document.getElementById('yphone').value;
+            let lastname = document.getElementById('lname').value;
+
             document.getElementById('contact').style.display = 'none';
             document.getElementById('thank-you').style.display = 'block';
         }
